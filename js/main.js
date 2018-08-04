@@ -1,6 +1,10 @@
-"use strict"
+"use strict";
 
-let buildDOMFile = require("./buildDOM");
+let buildDOM = require("./buildDOM");
+let buildHeader = require("./build-header");
+let buildQuarterCards = require("./build-cards");
 
 console.log("build the dom!");
-buildDOMFile();
+buildDOM();
+buildHeader();
+buildQuarterCards();

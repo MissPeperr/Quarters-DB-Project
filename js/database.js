@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 const stateQuarters = [
     {
         name: "Tennessee",
@@ -56,3 +56,5 @@ const stateQuarters = [
         year: "2008",
     }
 ]
+
+module.exports = stateQuarters;
