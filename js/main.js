@@ -1,6 +1,6 @@
-"use strict"
+"use strict";
 
-let buildDOMFile = require("./buildDOM");
+let buildDOM = require("./buildDOM.js");
 
 console.log("build the dom!");
-buildDOMFile();
+buildDOM();
