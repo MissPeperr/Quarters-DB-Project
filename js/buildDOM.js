@@ -1,19 +1,19 @@
 "use strict"
-console.log("building the DOM!");
 
 // universal function for grabbing elements on the DOM
-grabElement = (identifier) => {
+let grabElement = (identifier) => {
     let element = document.querySelector(identifier);
     return element;
 }
 
 // universal function for creating elements on the DOM
-makeElement = (element) => {
+let makeElement = (element) => {
     let madeElement = document.createElement(element);
     return madeElement;
 }
 
-buildDOM = () => {
+// function that's inserting each element at a certain point on the DOM
+let buildDOM = () => {
 const body = grabElement("body");
 const script = grabElement("script");
 const header = makeElement("header");
@@ -24,7 +24,11 @@ body.insertBefore(main, footer);
 body.insertBefore(header, main);
 }
 
-makeContainer = () => {
+let makeContainer = () => {
     const mainContent = grabElement("main");
     const familyContainer = makeElement("div");
+    familyContainer.setAttribute("class", "family-container");
+    mainContent.appendChild(familyContainer);
 }
+
+module.exports = buildDOM;
