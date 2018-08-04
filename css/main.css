@@ -1,3 +1,17 @@
 body {
     background-color: whitesmoke;
 }
+
+.quarter-card {
+    background-color: lightsteelblue;
+    border: darkcyan solid 3px;
+    display: flex;
+}
+
+.quarter-card div {
+    padding: 1em;
+}
+
+.quarter-card img {
+    max-width: 150px;
+}

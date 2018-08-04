@@ -22,11 +22,11 @@ let buildDOM = () => {
     body.insertBefore(footer, script);
     body.insertBefore(main, footer);
     body.insertBefore(header, main);
-    makeContainer();
+    makeContainers();
 }
 
 // function that is making our containers and organizing how we want them to look on our page
-let makeContainer = () => {
+let makeContainers = () => {
     const mainContent = grabElement("main");
     const familyContainer = makeElement("div");
     familyContainer.setAttribute("class", "family-container");
