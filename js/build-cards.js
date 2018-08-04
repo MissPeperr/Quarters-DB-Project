@@ -10,7 +10,7 @@ let buildQuarterCards = () => {
                 <div>
                     <img src="${item.image}" alt="${item.name} State Quarter">
                 </div>
-                <div>
+                <div class="div-text">
                     <h3>${item.name}</h3>
                     <h4>Year released: ${item.year}</h4>
                 </div>
